@@ -1,0 +1,24 @@
+package:
+  git:
+    installed: true
+    versions:
+    - 1:2.7.4-0ubuntu1.2
+  nodejs:
+    installed: true
+    versions:
+    - 8.6.0-1nodesource1
+  python:
+    installed: true
+    versions:
+    - 2.7.11-1
+  yarn:
+    installed: true
+    versions:
+    - 1.1.0-1
+command:
+  pip list --format=legacy | grep aws:
+    exit-status: 0
+    stdout:
+    - awscli (1.11.164)
+    stderr: []
+    timeout: 10000

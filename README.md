@@ -8,14 +8,19 @@ You must have [docker](https://docs.docker.com/engine/installation/) installed.
 
 ## Building image
 
+    docker build .
+
+## Building image for release
+
     docker build -t chrismillersd/build-node-aws:x.x.x .
 
 ## Step into image
 
-    docker run -it <BUILD_HASH>/bin/bash
+    docker run -it <BUILD_HASH> /bin/bash
 
 ## Pushing image to docker-hub
 
     docker login
+    ...
     docker push docker push chrismillersd/build-node-aws:x.x.x
 
